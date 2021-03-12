@@ -21,7 +21,7 @@ async def appDefinition():
         },
     ]
     app = FastAPI(
-        title="CAPTCHA",
+        title="bar",
         description="HTTP server for testing cloud code debug capability",
         version="0.1.0",
         openapi_tags=tags_metadata,
