@@ -1,0 +1,8 @@
+services:
+  bar:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: pedrozena/bar:local
+    ports: 
+      - 8082:8082

@@ -1,0 +1,8 @@
+services:
+  foo:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: pedrozena/foo:local
+    ports: 
+      - 8081:8081

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bar-service
+spec:
+  ports:
+  - port: 8082
+    targetPort: bar-port
+    protocol: TCP
+  selector:
+    app: bar

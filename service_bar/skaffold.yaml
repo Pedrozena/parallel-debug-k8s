@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+metadata:
+  name: bar
+build:
+  artifacts:
+    - image: pedrozena/bar
+      docker:
+        dockerfile: Dockerfile
+  tagPolicy:
+    sha256: {}
+deploy:
+  kubectl:
+    manifests:
+      - deployment-bar.yml
+      - service-bar.yml

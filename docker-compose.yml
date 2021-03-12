@@ -1,0 +1,7 @@
+services:
+  foo:
+    image: pedrozena/foo:local
+    ports: 
+      - 8081:8081
+  bar:
+    image: pedrozena/foo:local
